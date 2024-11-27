@@ -16,17 +16,133 @@ Select ONE Additional Feature to Add
 
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Unit 5 Project</title>
+    <meta charset="utf-8" />
+    <style>
+      h1 {
+        color: red;
+        font-style: Italic;
+      }
 
-<head>
-  <title>Unit 5 Project</title>
-  <meta charset="utf-8">
-  <style>
+      body {
+        background-color: black;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+        height: 100vh;
+      }
 
-  </style>
-</head>
-<body>
+      .box {
+        border: 2px solid #333;
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 18px;
+      }
 
- 
+      .margin-box {
+        background-color: white;
+        margin: 20px;
+      }
 
-</body>
+      .padding-box {
+        background-color: red;
+        padding: 20px;
+      }
+      .Dance {
+        color: white;
+      }
+      h2 {
+        color: Red;
+      }
+      p {
+        color: white;
+      }
+
+      .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      }
+
+      .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+      }
+
+      .flip-card-front,
+      .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+
+      .flip-card-front {
+        background-color: #bbb;
+        color: black;
+      }
+
+      .flip-card-back {
+        background-color: black;
+        color: white;
+        transform: rotateY(180deg);
+      }
+      h3 {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>LaGuardia's 2025 <span class="Dance">Dance</span> Showcase</h1>
+
+    <div class="container">
+      <div class="box margin-box">All New Dances</div>
+      <div class="box padding-box">A Night to Remember!!!!</div>
+    </div>
+
+   
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img
+            src="https://www.seeingdance.com/wp-content/uploads/2021/06/LaGuardia-Against-All-Odds-210628-1.jpg"
+            alt="dancers"
+            style="width: 300px; height: 300px"
+          />
+        </div>
+        <div class="flip-card-back">
+          <h1>YOU ARE INVITED</h1>
+          <p>Join us to watch the 2025 LaGuardia Dance Showcase</p>
+          <img
+            src="https://img1.wsimg.com/isteam/ip/b3d63554-065e-452e-8a88-cc20d56fcd4a/i-Rqg5PHH-X3.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:182,cg:true"
+            width="200"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div id="info"></div>
+    <h2>Info</h2>
+
+    <p>Where: LaGuardia High School Little Flower Theatre</p>
+    <p>When:</p>
+    <p>Friday 1/17 at 4:00pm and 7:00pm</p>
+    <p>Saturday 1/18 at 2:00pm and 6:30pm</p>
+
+    <img
+      src="https://www.laguardiahs.org/rotating_images/9248/9248_1_1400_0_96.jpg"
+      alt="Dancers"
+      width="200"
+    />
+    <h3>Dancers that are Performing</h3>
+    <a
+      href="https://www.scottallenphotography.com/Portraits/LaGuardia-High-School/2025-Senior-Headshots"
+      >2025 Senior Headshots</a
+    >
+  </body>
 </html>
